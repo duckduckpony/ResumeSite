@@ -9,7 +9,7 @@ ul {
 }
 
 div pre {
-	font-family:Opificio;
+	font-family:opificioregular;
 	font-size:1.4em;
 	color:#ffffff;
 	text-align: center;
@@ -18,7 +18,7 @@ div pre {
 }
 
 div div p {
-	font-family:Opificio;
+	font-family:opificioregular;
 	color:#ffffff;
 }
 
@@ -50,7 +50,7 @@ p a {
 }
 
 .nav {
-	font-family:Opificio;
+	font-family:opificioregular;
 	font-size:1.3em;
 	color:#ffffff;
 	float:right;
@@ -279,7 +279,7 @@ p a {
 }
 
 #resume {
-	font-family:Opificio;
+	font-family:opificioregular;
 	color:#7eb5d6;
 	margin-top: -15px;
 	margin-left: 50px;
