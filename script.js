@@ -39,7 +39,9 @@ $(document).ready(function() {
 	   sbg.css("display","none");
 	   scorebg.css("display","none");
 	   mbg.css("display","none");
+	   musicitem.css("opacity","0");
 	   scorebg.fadeTo(200,1);
+	   musicitem.delay(500).fadeTo(500,1);
     });
     
     //sound nav functions
