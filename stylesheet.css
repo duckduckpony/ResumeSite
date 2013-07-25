@@ -185,7 +185,6 @@ p a {
 	padding-top: 28px;
 	position:absolute;
 	z-index:10;
-	opacity:0.2;
 }
 
 #reelplayer {
@@ -303,4 +302,8 @@ p a {
 	display:inline;
 	float:left;
 	clear:both;
+}
+
+#sound {
+	
 }

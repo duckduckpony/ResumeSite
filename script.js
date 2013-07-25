@@ -23,6 +23,7 @@ $(document).ready(function() {
 	var scoreitem = $('.scoreitem');
 	var bison = $('#bisonplayer');
 	var reelplayer = $('#reelplayer');
+	var soundtest = $('#sound')[0];
 
 	// score nav functions
 	score.mouseenter(function() 
@@ -141,7 +142,9 @@ $(document).ready(function() {
 	
 	twitter.mouseenter(function()
     {
+    	//soundtest.play();
 		twitter.animate({backgroundColor: '#7BF0CA'},200);
+		
 	});
 	twitter.mouseleave(function()
 	{
