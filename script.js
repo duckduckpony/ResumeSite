@@ -71,12 +71,9 @@ $(document).ready(function() {
     	scorebg.css("display","none");
     	mbg.css("display","none");
     	sbg.css("display","none");
-    	sbg.css("height","0px");
     	sound.animate({color: '#644436'},300);
-    	reelplayer.css("opacity","0");
 	    sbg.fadeTo(200,1);
-	    sbg.animate({height:'356px'});
-	    reelplayer.delay(500).fadeTo(1000,1);
+	    reelplayer.css("display","block");
     });
     
     //music nav functions
