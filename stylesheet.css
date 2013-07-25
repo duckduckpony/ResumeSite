@@ -41,6 +41,14 @@ p a {
 	opacity:0;
 }
 
+.scoreitem {
+	position:relative;
+	display:inline-block;
+	margin-top: -20px;
+	opacity:0;
+	z-index:4;
+}
+
 .col {
 	display:inline-block;
 	margin-left: auto;
@@ -76,6 +84,8 @@ p a {
 #col2 {
 	position:absolute;
 	display: inline-block;
+	width:637px;
+	z-index:-1;
 }
 
 #email {
@@ -175,6 +185,12 @@ p a {
 	padding-top: 28px;
 	position:absolute;
 	z-index:10;
+	opacity:0.2;
+}
+
+#reelplayer {
+	display:block;
+	opacity:1;
 }
 
 

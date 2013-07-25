@@ -20,7 +20,9 @@ $(document).ready(function() {
 	var pillar = $('#pillarsplayer');
 	var grow = $('#growplayer');
 	var musicitem = $('.musicitem');
+	var scoreitem = $('.scoreitem');
 	var bison = $('#bisonplayer');
+	var reelplayer = $('#reelplayer');
 
 	// score nav functions
 	score.mouseenter(function() 
@@ -35,13 +37,20 @@ $(document).ready(function() {
     
     score.click(function()
     {
-	   reel.css("display","none");
+	   sound.animate({color: '#ffffff'},100);
+	   music.animate({color: '#ffffff'},100);
 	   sbg.css("display","none");
+	   reelplayer.css("display","none");
 	   scorebg.css("display","none");
+	   sbg.css("display","none");
 	   mbg.css("display","none");
-	   musicitem.css("opacity","0");
+	   musicitem.css("display","none");
+	   scorebg.css("height","0px");
+	   score.animate({color: '#644436'},300);
+	   scoreitem.css("opacity","0");
 	   scorebg.fadeTo(200,1);
-	   musicitem.delay(500).fadeTo(500,1);
+	   scorebg.animate({height:'300px'});
+	   scoreitem.delay(500).fadeTo(500,1);
     });
     
     //sound nav functions
@@ -57,11 +66,17 @@ $(document).ready(function() {
     
     sound.click(function()
     {
+    	music.animate({color: '#ffffff'},100);
+    	score.animate({color: '#ffffff'},100);
     	scorebg.css("display","none");
     	mbg.css("display","none");
     	sbg.css("display","none");
-    	reel.css("display","block");
+    	sbg.css("height","0px");
+    	sound.animate({color: '#644436'},300);
+    	reelplayer.css("opacity","0");
 	    sbg.fadeTo(200,1);
+	    sbg.animate({height:'356px'});
+	    reelplayer.delay(500).fadeTo(1000,1);
     });
     
     //music nav functions
@@ -75,11 +90,14 @@ $(document).ready(function() {
     })
     music.click(function()
     {
-    	reel.css("display","none");
+    	score.animate({color: '#ffffff'},100);
+    	sound.animate({color: '#ffffff'},100);
     	scorebg.css("display","none");
+    	reelplayer.css("display","none");
     	sbg.css("display","none");
     	mbg.css("display","none");
     	mbg.css("height","0px");
+    	music.animate({color: '#644436'},300);
     	musicitem.css("opacity","0");
     	mbg.fadeTo(200,1);
 	    mbg.animate({height: '300px'});
