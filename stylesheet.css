@@ -34,6 +34,14 @@ p a {
 
 /*classes*/
 
+.scoreinfo {
+	opacity:0;
+}
+
+.musicinfo {
+	opacity:0;
+}
+
 .musicitem {
 	position:relative;
 	display:inline-block;
@@ -178,6 +186,22 @@ p a {
 
 }
 
+#bottominfo {
+	clear:both;
+	margin-top:14px;
+	width:637px;
+	height:126px;
+	background-color: #fff2e4;
+}
+
+/* reel info */
+#soundinfo {
+	font-size:14px;
+	padding-top: 10px;
+	padding-left: 7px;
+	opacity:0;
+}
+
 #reel {
 	top:0px;
 	left:0px;
@@ -191,6 +215,50 @@ p a {
 	display:block;
 	opacity:1;
 }
+
+/* score player info */
+#braveinfo {
+	padding-top: 15px;
+	margin-left:35px;
+	display:inline-block;
+	position:absolute;
+}
+
+#parainfo {
+	padding-top: 5px;
+	padding-left: 225px;
+	display:inline-block;
+	position:absolute;
+}
+
+#drillinfo {
+	padding-top: 5px;
+	padding-left:430px;
+	display:inline-block;
+	position:absolute;
+	font-size:14px;
+}
+
+/* music player info */
+#pillarsinfo {
+	margin-left: 50px;
+	display:inline-block;
+	position:absolute;
+}
+
+#growinfo {
+	margin-left: 270px;
+	display:inline-block;
+	position:absolute;
+}
+
+#bisoninfo {
+	margin-left: 480px;
+	display:inline-block;
+	position:absolute;
+}
+
+
 
 
 
@@ -260,8 +328,8 @@ p a {
 	clear:both;
 }
 
-#fb {
-	margin-left: 10px;
+#fs {
+	margin-left: 2.99px;
 	margin-right: 2.99px;
 	width:70px;
 	height:70px;
@@ -271,7 +339,7 @@ p a {
 }
 
 #soundcloud {
-	margin-right: 2.99px;
+	margin-left: 10px;
 	width:70px;
 	height:70px;
 	background-color: #90DADA;
@@ -279,7 +347,7 @@ p a {
 }
 
 #bandcamp {
-	margin-right: 2.99px;
+	margin-left:2.99px;
 	width:70px;
 	height:70px;
 	background-color: #90DADA;
@@ -287,6 +355,7 @@ p a {
 }
 
 #twitter {
+	margin-left: 2.99px;
 	width:70px;
 	height:70px;
 	background-color: #90DADA;
