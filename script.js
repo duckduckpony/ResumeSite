@@ -1,6 +1,17 @@
 
 
-$(document).ready(function() {
+$(document).ready(function() {	
+	$(document).ready(function()
+	{
+		sound.animate({color: '#644436'},300);
+	    sbg.fadeTo(200,1);
+	    reelplayer.css("display","block");
+	    bottominfo.css("height","0px");
+	    bottominfo.css("display","block");
+	    bottominfo.animate({backgroundColor: '#8f6048'},50);
+	    bottominfo.animate({height:'70px'},300);
+	    soundinfo.delay(300).fadeTo(300,1);
+	});
 	// declare variables
 	var email = $('#email');
 	
@@ -78,7 +89,7 @@ $(document).ready(function() {
 	   scoreitem.delay(500).fadeTo(500,1);
 	   bottominfo.css("height","0px");
 	   bottominfo.css("display","block");
-	   bottominfo.delay(200).animate({backgroundColor: '#644436'},500);
+	   bottominfo.delay(200).animate({backgroundColor: '#8f6048'},500);
 	   bottominfo.animate({height:'126px'},300);
 	   scoreinfo.delay(800).fadeTo(300,1);
     });
@@ -116,7 +127,7 @@ $(document).ready(function() {
 	    reelplayer.css("display","block");
 	    bottominfo.css("height","0px");
 	    bottominfo.css("display","block");
-	    bottominfo.animate({backgroundColor: '#644436'},50);
+	    bottominfo.animate({backgroundColor: '#8f6048'},50);
 	    bottominfo.animate({height:'70px'},300);
 	    soundinfo.delay(300).fadeTo(300,1);
     });
@@ -151,7 +162,7 @@ $(document).ready(function() {
 	    musicitem.delay(500).fadeTo(500,1);
 	    bottominfo.css("height","0px");
 	    bottominfo.css("display","block");
-	    bottominfo.delay(200).animate({backgroundColor: '#644436'},500);
+	    bottominfo.delay(200).animate({backgroundColor: '#8f6048'},500);
 	    bottominfo.animate({height:'126px'},300);
 	    musicinfo.delay(800).fadeTo(300,1);
 	    

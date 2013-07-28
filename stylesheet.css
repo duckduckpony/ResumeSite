@@ -9,7 +9,7 @@ ul {
 }
 
 div pre {
-			font-family:opificioregular;
+	font-family:opificioregular;
 	font-size:1.4em;
 	color:#ffffff;
 	text-align: center;
@@ -104,7 +104,8 @@ p a {
 }
 
 #phone {
-	padding-top:-20px;
+	padding-top:13px;
+	margin-top:0px;
 	text-align: center;
 	
 }
@@ -253,7 +254,7 @@ p a {
 }
 
 #bisoninfo {
-	margin-left: 480px;
+	margin-left: 470px;
 	display:inline-block;
 	position:absolute;
 }
@@ -316,7 +317,7 @@ p a {
 
 #bisonplayer {
 	margin-top: 20px;
-	margin-left: 19px;
+	margin-right: 10px;
 }
 
 
@@ -370,6 +371,18 @@ p a {
 	font-size: 23px;
 	display:inline;
 	float:left;
+	clear:both;
+}
+
+#copyright {
+	font-family:opificioregular;
+	color:#7eb5d6;
+	margin-top: -45px;
+	margin-left: 50px;
+	margin-right: 5px;
+	font-size: 12px;
+	display:inline-block;
+	float:right;
 	clear:both;
 }
 
