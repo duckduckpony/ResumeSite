@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {	
 
 	// loads all sound design info on page load so user doesn't need to click anywhere at first
@@ -92,7 +90,7 @@ $(document).ready(function() {
     
     score.click(function()
     {
-    	if (scoresOn==false)
+    	if (scoresOn===false)
     	{
 	    	sound.animate({color: '#ffffff'},100);
 	    	music.animate({color: '#ffffff'},100);
@@ -130,7 +128,7 @@ $(document).ready(function() {
     
     sound.click(function()
     {
-    	if (soundOn==false)
+    	if (soundOn===false)
     	{
 	    	music.animate({color: '#ffffff'},100);
 	    	score.animate({color: '#ffffff'},100);
@@ -159,7 +157,7 @@ $(document).ready(function() {
     })
     music.click(function()
     {
-    	if (musicOn==false)
+    	if (musicOn===false)
     	{
 	    	score.animate({color: '#ffffff'},100);
 	    	sound.animate({color: '#ffffff'},100);
