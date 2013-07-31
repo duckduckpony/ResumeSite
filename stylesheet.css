@@ -96,6 +96,8 @@ p a {
 	z-index:-1;
 }
 
+
+/*contact items*/
 #email {
 	opacity:0.5;
 	padding-top:5px;
@@ -165,6 +167,7 @@ p a {
 	float:right;
 }
 
+/* various containers/wrappers for sections of the site */
 #container {
 	width:1000px;
 	margin: 0px auto;
@@ -263,7 +266,7 @@ p a {
 
 
 
-
+/* backgrounds for each navigation section */
 
 #soundbg {
 	margin-bottom: -8px;
@@ -304,7 +307,8 @@ p a {
 
 
 
-/*music ids*/
+/*music player ids*/
+
 #pillarsplayer {
 	margin-top: 0px;
 	margin-left: -15px;
@@ -322,6 +326,7 @@ p a {
 
 
 /*bottom bar*/
+
 #bottombar {
 	margin-top: -10px;
 	display:inline;
@@ -363,6 +368,8 @@ p a {
 	display:inline-block;
 }
 
+/* resume and 'copyright' */
+
 #resume {
 	font-family:opificioregular;
 	color:#7eb5d6;
@@ -386,6 +393,3 @@ p a {
 	clear:both;
 }
 
-#sound {
-	
-}

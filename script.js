@@ -1,6 +1,8 @@
 
 
 $(document).ready(function() {	
+
+	// loads all sound design info on page load so user doesn't need to click anywhere at first
 	$(document).ready(function()
 	{
 		sound.animate({color: '#644436'},300);
@@ -11,6 +13,7 @@ $(document).ready(function() {
 	    bottominfo.animate({backgroundColor: '#8f6048'},50);
 	    bottominfo.animate({height:'70px'},300);
 	    soundinfo.delay(300).fadeTo(300,1);
+	    soundOn = true;
 	});
 	// declare variables
 	var email = $('#email');
@@ -55,6 +58,27 @@ $(document).ready(function() {
 	var reelplayer = $('#reelplayer');
 	var soundtest = $('#sound')[0];
 
+	// bools to determine which section is clicked
+	var soundOn = false;
+	var musicOn = false;
+	var scoresOn = false;
+
+	function displayReset()
+	{
+		soundinfo.css("display","none");
+		musicitem.css("display","none");
+		soundinfo.css("opacity","0");
+		scoreinfo.css("opacity","0");
+		musicinfo.css("opacity","0");
+		reelplayer.css("display","none");
+		scorebg.css("display","none");
+		sbg.css("display","none");
+		mbg.css("display","none");
+		bottominfo.css("display","none");
+		bottominfo.css("height","0px");
+	    bottominfo.css("display","block");
+	};
+
 	// score nav functions
 	score.mouseenter(function() 
 	{
@@ -68,30 +92,25 @@ $(document).ready(function() {
     
     score.click(function()
     {
-	   sound.animate({color: '#ffffff'},100);
-	   music.animate({color: '#ffffff'},100);
-	   sbg.css("display","none");
-	   soundinfo.css("display","none");
-	   soundinfo.css("opacity","0");
-	   scoreinfo.css("opacity","0");
-	   musicinfo.css("opacity","0");
-	   reelplayer.css("display","none");
-	   scorebg.css("display","none");
-	   sbg.css("display","none");
-	   mbg.css("display","none");
-	   bottominfo.css("display","none");
-	   musicitem.css("display","none");
-	   scorebg.css("height","0px");
-	   score.animate({color: '#644436'},300);
-	   scoreitem.css("opacity","0");
-	   scorebg.fadeTo(200,1);
-	   scorebg.animate({height:'300px'});
-	   scoreitem.delay(500).fadeTo(500,1);
-	   bottominfo.css("height","0px");
-	   bottominfo.css("display","block");
-	   bottominfo.delay(200).animate({backgroundColor: '#8f6048'},500);
-	   bottominfo.animate({height:'126px'},300);
-	   scoreinfo.delay(800).fadeTo(300,1);
+    	if (scoresOn==false)
+    	{
+	    	sound.animate({color: '#ffffff'},100);
+	    	music.animate({color: '#ffffff'},100);
+	    	displayReset();
+	    	scorebg.css("height","0px");
+	    	score.animate({color: '#644436'},300);
+	    	scoreitem.css("opacity","0");
+	    	scorebg.fadeTo(200,1);
+	    	scorebg.animate({height:'300px'});
+	    	scoreitem.delay(500).fadeTo(500,1);
+	    	bottominfo.delay(200).animate({backgroundColor: '#8f6048'},500);
+	    	bottominfo.animate({height:'126px'},300);
+	    	scoreinfo.delay(800).fadeTo(300,1);
+	    	scoresOn = true;
+	    	soundOn = false;
+	    	musicOn = false;
+    	};
+	   
     });
     
     scoreitem.click(function(event) {
@@ -111,25 +130,22 @@ $(document).ready(function() {
     
     sound.click(function()
     {
-    	music.animate({color: '#ffffff'},100);
-    	score.animate({color: '#ffffff'},100);
-    	musicitem.css("display","none");
-    	soundinfo.css("display","none");
-    	soundinfo.css("opacity","0");
-    	bottominfo.css("display","none");
-    	scoreinfo.css("display","none");
-    	musicinfo.css("display","none");
-    	scorebg.css("display","none");
-    	mbg.css("display","none");
-    	sbg.css("display","none");
-    	sound.animate({color: '#644436'},300);
-	    sbg.fadeTo(200,1);
-	    reelplayer.css("display","block");
-	    bottominfo.css("height","0px");
-	    bottominfo.css("display","block");
-	    bottominfo.animate({backgroundColor: '#8f6048'},50);
-	    bottominfo.animate({height:'70px'},300);
-	    soundinfo.delay(300).fadeTo(300,1);
+    	if (soundOn==false)
+    	{
+	    	music.animate({color: '#ffffff'},100);
+	    	score.animate({color: '#ffffff'},100);
+	    	displayReset();
+	    	sound.animate({color: '#644436'},300);
+	    	sbg.fadeTo(200,1);
+	    	reelplayer.css("display","block");
+	    	bottominfo.animate({backgroundColor: '#8f6048'},50);
+	    	bottominfo.animate({height:'70px'},300);
+	    	soundinfo.delay(300).fadeTo(300,1);
+	    	soundOn = true;
+	    	musicOn = false;
+	    	scoresOn = false;
+    	};
+    	
     });
     
     //music nav functions
@@ -143,28 +159,25 @@ $(document).ready(function() {
     })
     music.click(function()
     {
-    	score.animate({color: '#ffffff'},100);
-    	sound.animate({color: '#ffffff'},100);
-    	scoreinfo.css("display","none");
-    	soundinfo.css("display","none");
-    	soundinfo.css("opacity","0");
-    	musicinfo.css("opacity","0");
-       	bottominfo.css("display","none");
-    	scorebg.css("display","none");
-    	reelplayer.css("display","none");
-    	sbg.css("display","none");
-    	mbg.css("display","none");
-    	mbg.css("height","0px");
-    	music.animate({color: '#644436'},300);
-    	musicitem.css("opacity","0");
-    	mbg.fadeTo(200,1);
-	    mbg.animate({height: '300px'});
-	    musicitem.delay(500).fadeTo(500,1);
-	    bottominfo.css("height","0px");
-	    bottominfo.css("display","block");
-	    bottominfo.delay(200).animate({backgroundColor: '#8f6048'},500);
-	    bottominfo.animate({height:'126px'},300);
-	    musicinfo.delay(800).fadeTo(300,1);
+    	if (musicOn==false)
+    	{
+	    	score.animate({color: '#ffffff'},100);
+	    	sound.animate({color: '#ffffff'},100);
+	    	scoreinfo.css("display","none");
+	    	displayReset();
+	    	mbg.css("height","0px");
+	    	music.animate({color: '#644436'},300);
+	    	musicitem.css("opacity","0");
+	    	mbg.fadeTo(200,1);
+	    	mbg.animate({height: '300px'});
+	    	musicitem.delay(500).fadeTo(500,1);
+	    	bottominfo.delay(200).animate({backgroundColor: '#8f6048'},500);
+	    	bottominfo.animate({height:'126px'},300);
+	    	musicinfo.delay(800).fadeTo(300,1);
+	    	musicOn = true;
+	    	scoresOn = false;
+	    	soundOn = false;
+    	};
 	    
     });
     
@@ -208,7 +221,6 @@ $(document).ready(function() {
 	
 	twitter.mouseenter(function()
     {
-    	//soundtest.play();
 		twitter.animate({backgroundColor: '#7BF0CA'},200);
 		
 	});
@@ -224,7 +236,5 @@ $(document).ready(function() {
 	{
 		$('#resume').animate({color: '#7eb5d6'},200);
 	});
-	
-	//code for switching bc players
 	
 });
