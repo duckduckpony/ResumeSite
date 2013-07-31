@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<link rel="stylesheet" href="stylesheet2.css" type="text/css" charset="utf-8" />
-		<!-- <audio id="sound"><source src="sound.wav"></source></audio> -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.animate-colors-min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<title>Bryan Becker</title>
+		<!-- css links --> <link type="text/css" rel="stylesheet" href="stylesheet.css"/> <link rel="stylesheet" href="stylesheet2.css" type="text/css" charset="utf-8" />
+		<!-- favicon --> <link rel="shortcut icon" href="http://www.bryanvbecker.com/favicon.ico"/>
+		<!-- jquery links --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script type="text/javascript" src="jquery.animate-colors-min.js"></script>
+		<!-- javascript link --><script type="text/javascript" src="script.js"></script>
+		<title>Bryan Becker | Sound Designer</title>
 	</head>
 	<body style="background-color:#fff2e4">
 	
 		<div id="container"> <!-- container to hold sidebar and background divs -->
 		
-			<div class="col" id="col1">
+			<div class="col" id="col1"> <!-- column container for sidebar (nav, contact, work links) -->
 			
-				<div id="sidebar_top">
+				<div id="sidebar_top"> <!-- top of sidebar, holds nav items and brief description -->
 					<p><pre>b r y a n    b e c k e r</pre></p>
-					<p id="desc">sound designer. composer. audio engineer.
-					<p class="nav" id="sound">s o u n d<div class="navball" id="soundball"></div></p>
-					<p class="nav" id="score">s c o r e s<div class="navball" id="scoreball"></div></p>
-					<p class="nav" id="music">m u s i c<div class="navball" id="musicball"></div></p>
+					<p id="desc">sound designer. composer. audio engineer.</p>
+					<ul> <!-- list to hold nav items for sound, scores, and music -->
+						<li><p class="nav" id="sound">s o u n d<div class="navball" id="soundball"></div></p></li>
+						<li><p class="nav" id="score">s c o r e s<div class="navball" id="scoreball"></div></p></li>
+						<li><p class="nav" id="music">m u s i c<div class="navball" id="musicball"></div></p></li>
+					</ul>
+					
 					</div>
-					<div id="sidebar_bottom">
+					
+					<div id="sidebar_bottom"> <!-- bottom of sidebar, holds email and phone contact, does not include work links (sc/bc/fs/twitter) -->
 						<p id="email"><a href="mailto:bryan.v.becker@gmail.com">bryan . v . becker @ gmail . com</a></p>
 						<p id="phone">216-533-4605</p>
 					</div>
 			</div>
 			
-			<div class="col" id="col2">
+			<div class="col" id="col2"> <!-- column 2 (right col) on page, holds background for each section (score, music, sound) and each item associated -->
 			
-				<div id="reel"><iframe id="reelplayer" src="http://player.vimeo.com/video/67767590" width="534" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+				<!-- vimeo embed of sound design reel --> <div id="reel"><iframe id="reelplayer" src="http://player.vimeo.com/video/67767590" width="534" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 				
-				<div id="soundbg"></div>
+				<div id="soundbg"></div> <!-- background color swatch for sound design section -->
 				
-				<div id="scorebg">
-					<ul>
+				<div id="scorebg"> <!-- background swatch for score section, holds each score bandcamp player as well -->
+					<ul> <!-- list to hold each bandcamp player in the score section -->
 						<li class="scoreitem"><iframe id="braveplayer" style="border: 0; width: 170px; height: 170px; margin-left:-10px; margin-top:50px;" src="http://bandcamp.com/EmbeddedPlayer/album=2921593873/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://bryanbecker.bandcamp.com/album/the-brave-and-the-sly">The Brave and the Sly by Bryan Becker</a></iframe><p style="margin-bottom:-20px; margin-left:-10px; text-align:center; font-size:16px; color:#644436;">the brave and the sly</p></li>
 						<li class="scoreitem"><iframe id="paraplayer" style="border: 0; width: 170px; height: 170px; margin-left:30px; margin-top:20px;" src="http://bandcamp.com/EmbeddedPlayer/album=4294911671/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://bryanbecker.bandcamp.com/album/paranorman-trailer-rescore">Paranorman Trailer Rescore by Bryan Becker</a></iframe><p style="margin-bottom:-20px; margin-left:30px; text-align:center; font-size:16px; color:#644436;">paranorman trailer</p></li>
 						<li class="scoreitem"><iframe id="drillplayer" style="border: 0; width: 170px; height: 170px; margin-bottom:0px; margin-left:30px;" src="http://bandcamp.com/EmbeddedPlayer/album=4120329311/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://bryanbecker.bandcamp.com/album/drillbits">Drillbits by Bryan Becker</a></iframe><p style="margin-bottom:-20px; margin-left:25px; text-align:center; font-size:16px; color:#644436;">d r i l l b i t s</p></li>
@@ -43,27 +45,32 @@
 					</ul>
 				</div>
 				
-				<div id="musicbg">
-					<ul>
+				<div id="musicbg"> <!-- background swatch for music section, holds each music bandcamp player as well -->
+					<ul> <!-- list to hold each bandcamp player in the score section -->
 						<li class="musicitem"><iframe id="pillarsplayer"style="border: 0; width: 170px; height: 170px; margin-left:-15px; margin-top:50px;" src="http://bandcamp.com/EmbeddedPlayer/album=2771063511/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://frontierpioneer.bandcamp.com/album/pillars">pillars by Frontier, Pioneer</a></iframe><p style="margin-bottom:-20px; margin-left:-20px; text-align:center; font-size:16px;">pillars<br>frontier, pioneer<br></p></li>
 						<li class="musicitem"><iframe id="growplayer"style="border: 0; width: 170px; height: 170px; margin-left:34px; margin-top:20px;" src="http://bandcamp.com/EmbeddedPlayer/album=1488337413/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://frontierpioneer.bandcamp.com/album/youve-just-begun-to-grow">You&#39;ve Just Begun to Grow by Frontier, Pioneer</a></iframe><p style="margin-bottom:-20px; margin-left:22px; text-align:center;font-size:16px;">you've just begun to grow<br>frontier, pioneer</p></li>
 						<li class="musicitem"><iframe id="bisonplayer" style="border: 0; width: 170px; height: 170px; margin-bottom:0px; margin-left:25px;" src="http://bandcamp.com/EmbeddedPlayer/album=2938126783/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://bisonofficial.bandcamp.com/album/moraine-ep">Moraine (EP) by Bison</a></iframe><p style="margin-bottom:-20px; margin-left:15bryanpx; text-align:center;font-size:16px;">Moraine EP<br>Bison</p></li>
 					</ul>
 				</div>
 				
-				<div id="bottominfo">
-					<p id="soundinfo">sound design reel, includes six segments: <span style="color:#C7EFFF">super smash bros. resound</span> / <span style="color:#7eb5d6">sound design for 3d modeling demo</span> / <span style="color:#C7EFFF">score for animated short</span> / <span style="color:#7eb5d6">score and sound design for indie game</span> / <span style="color:#C7EFFF">sound design for columbia college capstone game</span> / <span style="color:#7eb5d6">score and sound to paranorman trailer for educational project</span></p>
+				<div id="bottominfo"> <!-- omnipresent bar at bottom of column 2 to hold info relevant to each section. holds all info at once, only displays relevant info thanks to some spells from the tome of jquery -->
+				
+					<!-- info for sound design reel. sort of messy right now, find a way to clean this up in the future, yo. --><p id="soundinfo">sound design reel, includes six segments: <span style="color:#C7EFFF">super smash bros. resound</span> / <span style="color:#7eb5d6">sound design for 3d modeling demo</span> / <span style="color:#C7EFFF">score for animated short</span> / <span style="color:#7eb5d6">score and sound design for indie game</span> / <span style="color:#C7EFFF">sound design for columbia college capstone game</span> / <span style="color:#7eb5d6">score and sound to paranorman trailer for educational project</span></p>
+					
+					<!-- info section for score, short descriptions of each song -->
 					<p class="scoreinfo" id="braveinfo">a score written for an <br>animation short by <br>laurel coleman</p>
 					<p class="scoreinfo" id="parainfo">a score written to the <br>trailer of paranorman for <br>a project at columbia <br>college chicago</p>
 					<p class="scoreinfo" id="drillinfo">a score written as sole sound designer/composer on the <br>game: drillbits, 1st place winner <br>at columbia college's 24-hour game jam</p>
+					
+					<!-- info section for music, descriptions of roles in each project -->
 					<p class="musicinfo" id="pillarsinfo">- composition<br>- performance<br>- recording<br>- mixing<br>- mastering</p>
 					<p class="musicinfo" id="growinfo">- composition<br>- performance<br>- recording<br>- mixing<br>- mastering</p>
 					<p class="musicinfo" id="bisoninfo">- performance<br>- recording<br>- mixing<br>- mastering</p>
 				</div>
-			</div>
+			</div> <!-- column 2 ends, finally. jeez. -->
 			
-			<div id="bottombar">
-				<ul id="list">
+			<div id="bottombar"> <!-- bottom bar underneath sidebar (column 1) to hold icons that link to various samples of work (soundcloud, freesound, etc.) -->
+				<ul id="list"> <!-- just an unordered list to hold all the icons. -->
 					
 					<li id="soundcloud"><a href="http://www.soundcloud.com/bryanbecker"><img src="sclogo.png" height="60" width="60" style="position:absolute; margin-left:5px; margin-top:5px;"/></a></li>
 					<li id="bandcamp"><a href="http://frontierpioneer.bandcamp.com"><img src="bclogo.png" height="20" width="60"style="position:absolute; margin-left:5px; margin-top:24px;"/></a></li>
@@ -71,8 +78,11 @@
 					<a href="http://freesound.org/people/duckduckpony/"><li id="fs"><img src="fs.png" height="40" width="60" style="position:absolute; margin-left:5px; margin-top:12px;"/></a></li>
 				</ul>
 			</div>
+			
+			<!-- BEGIN FINAL PREPARATIONS FOR WEBSITE. POST LINK TO RESUME FOR POTENTIAL EMPLOYERS/COLLEAGUES. TAKE CREDIT FOR HARD WORK ON WEBSITE. -->
 			<p id="resume"><a href="http://bryanvbecker.com/resume.pdf">resume / experience</a></p>
 			<p id="copyright">website design/code by bryan becker.</p>
+			<!-- FINAL PREPARATIONS COMPLETE. WEBSITE SEQUENCE HAS RUN ITS COURSE, PREPARE FOR SELF-DESTRUCT IN 5, 4, 3... Wait. Nope, no self-destruct today. That's scheduled for  November 9, 2934. Have a good day, thanks for stopping by! -->
 		</div>
 	</body>
-</html>
+</html> <!-- 011001010110111001100100 -->

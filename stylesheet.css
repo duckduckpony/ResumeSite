@@ -118,10 +118,10 @@ p a {
 
 /*nav items*/
 #sound {
-	margin-top: 50px;
-	margin-left: 180px;
+	margin-top: 20px;
+	margin-left: 140px;
 	margin-bottom: -45px;
-	margin-right:23px;
+	margin-right:33px;
 	float:left;
 }
 
@@ -137,9 +137,9 @@ p a {
 #score {
 	clear:both;
 	margin-top:50px;
-	margin-right: 25px;
+	margin-right: 35px;
 	margin-bottom: -15px;
-	margin-left:165.5px;
+	margin-left:125.5px;
 	float:left;
 }
 
@@ -154,8 +154,8 @@ p a {
 #music {
 	clear:both;
 	float:left;
-	margin-left:180px;
-	margin-right:25px;	
+	margin-left:140px;
+	margin-right:35px;	
 }
 
 #musicball {
