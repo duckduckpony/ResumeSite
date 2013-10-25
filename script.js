@@ -9,7 +9,7 @@ $(document).ready(function() {
 	    bottominfo.css("height","0px");
 	    bottominfo.css("display","block");
 	    bottominfo.animate({backgroundColor: '#8f6048'},50);
-	    bottominfo.animate({height:'70px'},300);
+	    bottominfo.animate({height:'126px'},300);
 	    soundinfo.delay(300).fadeTo(300,1);
 	    soundOn = true;
 	});
@@ -137,7 +137,7 @@ $(document).ready(function() {
 	    	sbg.fadeTo(200,1);
 	    	reelplayer.css("display","block");
 	    	bottominfo.animate({backgroundColor: '#8f6048'},50);
-	    	bottominfo.animate({height:'70px'},300);
+	    	bottominfo.animate({height:'126px'},300);
 	    	soundinfo.delay(300).fadeTo(300,1);
 	    	soundOn = true;
 	    	musicOn = false;
